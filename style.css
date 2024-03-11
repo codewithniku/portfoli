@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    font-size: 15px;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: "Madimi One", sans-serif;
+    color: aqua;
+}
+
+.nav-item ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.nav-item ul li {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 20px; */
+    padding: 0 10px;
+}
+
+.nav-item ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.nav-item ul li a:hover {
+    color: aqua;
+    transition: 0.2s all linear;
+}
+
+.nav-item ul li a:focus {
+    color: aqua;
+    transition: 0.2s all linear;
+}
+
+li a::after {
+    content: " ";
+    width: 0px;
+    background-color: aqua;
+    height: 2px;
+    bottom: 0;
+    display: block;
+    margin-left: 0;
+    margin: auto;
+    margin-top: 2px;
+}
+
+a:hover::after {
+    width: auto;
+    transition: 0.2s all linear;
+    left: 0;
+}
+
+a:focus::after {
+    width: 45px;
+    transition: 0.2s all linear;
+    left: 0;
+}
+
+
+.nav-btn {
+    padding: 7px 16px;
+    background-color: aqua;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.nav-btn:hover {
+    background-color: black;
+    font-weight: 600;
+    color: aqua;
+    border-color: aqua;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+
+
+/* Main section */
+
+.main-first {
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-photo {
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid white; */
+    border-radius: 3px 40px 3px 40px;
+    border-bottom: 3px solid aqua;
+    border-right: 3px solid aqua;
+    /* border-top: 3px solid white;
+    border-left: 3px solid white; */
+    overflow: hidden;
+}
+
+.main-photo img:hover {
+    transform: scale(1.1);
+    transition: 0.2s all ease-in-out;
+}
+
+.main-detail :nth-child(1) {
+    color: aqua;
+    padding: 3px 0;
+    font-size: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    /* font-family: "Madimi One", sans-serif; */
+}
+
+.main-detail :nth-child(2) {
+    margin-top: 12px;
+    font-size: 42px;
+    padding: 3px 0;
+}
+
+.main-detail :nth-child(3) {
+    font-size: 57px;
+    color: aqua;
+    padding: 3px 0;
+    font-family: "Madimi One", sans-serif;
+}
+
+.main-detail :nth-child(4),
+:nth-child(5) {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.main-detail :nth-child(6) {
+    padding: 18px 0;
+}
+
+.main-detail .cv {
+    margin-top: 25px;
+    padding: 7px 16px;
+    background-color: black;
+    font-size: 12px;
+    color: aqua;
+    border-color: aqua;
+}
+
+.main-detail .cv a {
+    text-decoration: none;
+    color: aqua;
+    border: none;
+}
+
+.main-detail .cv a:hover {
+    color: black;
+}
+
+.main-detail .cv:hover {
+    color: black;
+    font-weight: 600;
+    background-color: aqua;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.main-detail .con {
+    margin-top: 13px;
+    padding: 7px 17px;
+    background-color: aqua;
+    font-size: 12px;
+    color: black;
+    font-weight: 600;
+    border-color: aqua;
+}
+
+.main-detail .con:hover {
+    cursor: pointer;
+    background-color: black;
+    color: aqua;
+    transition: 0.2s all linear;
+}
+
+.sepration {
+    height: 7px;
+    background-color: #2f2f2f;
+}
+
+/* Main  Section  2 */
+
+
+.main-sec {
+    /* background-color: rgb(255, 255, 255); */
+    /* color: black; */
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0 80px 0 0;
+}
+
+.main-secphoto {
+    height: 300px;
+    width: 300px;
+    /* border: 2px solid white; */
+    border-radius: 40px 3px 40px 3px;
+    /* border-bottom: 3px solid aqua;
+    border-right: 3px solid aqua; */
+    border-right: 3px solid aqua;
+    border-left: 3px solid aqua;
+    overflow: hidden;
+}
+
+.about-me {
+    font-size: 42px;
+    margin-bottom: 40px;
+}
+
+.about-me>span:nth-child(2) {
+    color: aqua;
+    font-weight: 600;
+}
+
+.main-detail2 .about-para {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.main-detail2 .about-languages {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.main-detail2 .about-languages .lang {
+    height: 50px;
+    width: 50px;
+    border: 2px solid aqua;
+    border-radius: 0 25px 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Serivicess */
+
+.main-third {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-third .service1 {
+    font-size: 41px;
+}
+
+.main-third .service1>span {
+    margin-left: 10px;
+    color: aqua;
+    font-weight: 600;
+}
+
+.service2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.service2 .service-item {
+    margin: 15px;
+    height: 190px;
+    width: 340px;
+    background-color: black;
+    /* border: 2px solid black; */
+    border-radius: 3px 40px 3px 40px;
+    border-right: 3px solid aqua;
+    border-bottom: 3px solid aqua;
+    /* overflow: hidden; */
+}
+
+.service-item>div:first-child {
+    font-size: 25px;
+    position: relative;
+    left: -18px;
+    top: -18px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    border: none;
+    border-top: 2px solid aqua;
+    border-left: 2px solid aqua;
+}
+
+.service-item .service-item-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    margin: -20px 10px 40px;
+    color: white;
+}
+
+.service-item .service-item-detail>div:nth-child(1) {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.service-item .service-item-detail>div:nth-child(2) {
+    font-size: 14px;
+    color: white;
+}
+
+
+
+/* Footter  */
+
+
+.footer-contact {
+    height: 70vh;
+}
+
+.footer-contact .contact-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-size: 42px;
+    margin-top: 30px;
+}
+
+.footer-contact .contact-name>span {
+    margin-left: 10px;
+    color: aqua;
+    font-weight: 600;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+}
+
+.contact-section .contact-me {
+    position: relative;
+    left: -100px;
+}
+
+.contact-section .contact-me>div:first-child {
+    font-size: 35px;
+    color: aqua;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.contact-section .contact-me>div:nth-child(2) {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-section .contact-me>button {
+    padding: 8px 12px;
+    background-color: aqua;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 8px 2px 8px 2px;
+}
+
+.contact-section .contact-me>button:hover {
+    background-color: black;
+    color: aqua;
+    border: 2px solid aqua;
+    transition: 0.2s all linear;
+    cursor: pointer;
+}
+
+.contact-section .contact-form>form {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    /* border: 2px solid white; */
+    padding: 50px;
+    height: 300px;
+    border-radius: 40px 3px 40px 3px;
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+}
+
+.contact-section .contact-form>form>label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.contact-section .contact-form>form>input {
+    border: none;
+    border-bottom: 3px solid #2f2f2f;
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+
+.contact-section .contact-form>form>button {
+    margin-top: 18px;
+    padding: 10px;
+    border-radius: 15px 2px 15px 2px;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border: 2px solid aqua;
+}
+
+.contact-section .contact-form>form>button:hover {
+    background-color: aqua;
+    color: black;
+    transition: 0.2s all linear;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+
+/* Phone screen seeting  */
+
+@media screen and (max-width:1110px) {
+
+    .service2 .service-item {
+        margin: 15px;
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .main-first {
+        height: 90vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-photo {
+        height: 270px;
+        width: 270px;
+    }
+
+    .main-photo>img {
+        height: 270px;
+        width: 270px;
+    }
+
+    .main-detail .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* about section  */
+
+    .main-sec {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .main-secphoto {
+        height: 270px;
+        width: 270px;
+        margin-top: 20px;
+    }
+
+    .main-secphoto>img {
+        height: 270px;
+        width: 270px;
+    }
+
+    .main-detail2 .about-languages {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    /* Service Section  */
+
+    .main-third {
+        height: 85vh;
+    }
+
+    .service2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .service2 .service-item {
+        margin: 15px;
+        height: 170px;
+        width: 360px;
+    }
+
+
+    /* Contact section  */
+
+
+    .contact-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-section .contact-me {
+        position: relative;
+        left: 0px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        /* flex-direction: column; */
+    }
+
+
+    .nav-item ul li a {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .main-third {
+        height: 100vh;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .nav {
+        flex-direction: column;
+        height: 10vh;
+        gap: 2px;
+    }
+
+    .logo {
+        padding: 4px 0;
+    }
+
+    .main-first {
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-photo {
+        height: 280px;
+        width: 260px;
+        margin: 10px 0;
+    }
+
+    .main-photo>img {
+        height: 280px;
+        width: 260px;
+    }
+
+    .main-detail .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+
+     /* about section  */
+
+     .main-sec {
+        height: 105vh;
+        align-items: center;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .main-secphoto {
+        height: 280px;
+        width: 260px;
+        margin: 20px 0;
+    }
+
+    .main-secphoto>img {
+        height: 280px;
+        width: 260px;
+    }
+
+     /* Service Section  */
+
+     .main-third {
+        height: 100vh;
+    }
+
+    .service2 .service-item {
+        margin: 10px;
+        height: 160px;
+        width: 260px;
+    }
+
+     /* Contact section  */
+
+    .footer-contact{
+        height: 90vh;
+    }
+
+    .contact-section{
+        margin-top: 90px;
+    }
+
+    .contact-section .contact-form>form {
+        text-align: start;
+        padding: 40px;
+        margin: 10px 10px;
+    }
+
+
+}
